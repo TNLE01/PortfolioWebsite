@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Portfolio Prototype</title>
+  </head>
+  <body>
+    <h1><center>Welcome</center></h1>
+    <h6><center>Truong's Profolio Prototype</center></h6>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="flip1"><h2><center><bordertext class="solid">Computer science</bordertext></center></h2></div>
+                    <div id="panel1"><center><bordertext class="dashed">
+                        <li><a href="https://github.com/TNLE01?tab=repositories">Github</a></li>
+                        <li><a href="https://repl.it/@TruongLe1">Repl.it</a></li>
+                    </bordertext></center></div>
+            </div>
+            <div class="col">
+                <div id="flip2"><h2><center><bordertext class="solid">Art</bordertext></center></h2></div>
+                    <div id="panel2"><center><bordertext class="dashed">
+                        <li><a href="https://www.instagram.com/p/CFbFRj_BkTp/?utm_source=ig_web_button_share_sheet">Pan</a></li>
+                        <li><a href="https://www.instagram.com/p/B5s4-aWlbs0/?utm_source=ig_web_button_share_sheet">Painted Rocks</a></li>
+                        <li><a href="https://www.instagram.com/p/BwNQQXxAXka/?utm_source=ig_web_button_share_sheet">Landscape</a></li>
+                    </bordertext></center></div>
+            </div>
+            <div class="col">
+                <div id="flip3"><h2><center><bordertext class="solid">English</bordertext></center></h2></div>
+                    <div id="panel3"><center><bordertext class="dashed">
+                        <li><a href="https://docs.google.com/document/d/1aoU2xlfTKJP7IXgvrHX6eNM2oDqd5Xxjggj0s9Q757E/edit?usp=sharing">Brave New World</a></li>
+                    </bordertext></center></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip1").click(function(){
+                $("#panel1").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").slideToggle("slow");
+            });
+        });$(document).ready(function(){
+            $("#flip3").click(function(){
+                $("#panel3").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        bordertext.solid {border-style: solid;}
+        bordertext.dashed {border-style: dashed;}
+        #panel1, #panel2, #panel3 {
+            display: none;
+        }
+    </style>
+  </body>
+</html>
