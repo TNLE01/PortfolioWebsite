@@ -36,25 +36,28 @@
                     </bordertext></center></div>
             </div>
         </div>
+
+
+
         <div class="row">
             <div class="col">
-                <div id="flip1"><h2><center><bordertext class="solid">Math</bordertext></center></h2></div>
-                    <div id="panel1"><center><bordertext class="dashed">
+                <div id="flip4"><h2><center><bordertext class="solid">Math</bordertext></center></h2></div>
+                    <div id="panel4"><center><bordertext class="dashed">
                         <li><a href="https://github.com/TNLE01?tab=repositories">Github</a></li>
                         <li><a href="https://repl.it/@TruongLe1">Repl.it</a></li>
                     </bordertext></center></div>
             </div>
             <div class="col">
-                <div id="flip2"><h2><center><bordertext class="solid">Science</bordertext></center></h2></div>
-                    <div id="panel2"><center><bordertext class="dashed">
+                <div id="flip5"><h2><center><bordertext class="solid">Science</bordertext></center></h2></div>
+                    <div id="panel5"><center><bordertext class="dashed">
                         <li><a href="https://www.instagram.com/p/CFbFRj_BkTp/?utm_source=ig_web_button_share_sheet">Pan</a></li>
                         <li><a href="https://www.instagram.com/p/B5s4-aWlbs0/?utm_source=ig_web_button_share_sheet">Painted Rocks</a></li>
                         <li><a href="https://www.instagram.com/p/BwNQQXxAXka/?utm_source=ig_web_button_share_sheet">Landscape</a></li>
                     </bordertext></center></div>
             </div>
             <div class="col">
-                <div id="flip3"><h2><center><bordertext class="solid">History</bordertext></center></h2></div>
-                    <div id="panel3"><center><bordertext class="dashed">
+                <div id="flip6"><h2><center><bordertext class="solid">History</bordertext></center></h2></div>
+                    <div id="panel6"><center><bordertext class="dashed">
                         <li><a href="https://docs.google.com/document/d/1aoU2xlfTKJP7IXgvrHX6eNM2oDqd5Xxjggj0s9Q757E/edit?usp=sharing">Brave New World</a></li>
                     </bordertext></center></div>
             </div>
@@ -82,12 +85,25 @@
             $("#flip3").click(function(){
                 $("#panel3").slideToggle("slow");
             });
+        });$(document).ready(function(){
+            $("#flip4").click(function(){
+                $("#panel4").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#flip5").click(function(){
+                $("#panel5").slideToggle("slow");
+            });
+        });$(document).ready(function(){
+            $("#flip6").click(function(){
+                $("#panel6").slideToggle("slow");
+            });
         });
     </script>
     <style>
         bordertext.solid {border-style: solid;}
         bordertext.dashed {border-style: dashed;}
-        #panel1, #panel2, #panel3 {
+        #panel1, #panel2, #panel3, #panel4, #panel5, #panel6 {
             display: none;
         }
     </style>
